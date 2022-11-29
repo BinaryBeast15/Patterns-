@@ -1,0 +1,87 @@
+n=int(input("Enter No. of Rows : "))
+g=int(input("Enter No. of COlumn : "))
+
+#shape1
+print("Right angle pattern")
+for i in range(0,n):
+    for j in range(0,i):
+        print("* ",end=" ")
+    print()
+    
+    #shape 2
+print("Sqare filled box pattern")
+for k in range(0,n):
+    print("*"*n,end="")
+    print()
+print("Number right angle pattern : ")
+#shape 3
+
+for l in range(0,n):
+    o=1
+    for m in range(0,l):
+        
+        print(o,end="")
+        o+=1
+    print() 
+#shape 4
+
+print("2 :Number right angle pattern : ")
+o=0
+for w in range(0,n):
+    
+    for e in range(0,w):
+        
+        print(o,end="")
+        
+    print() 
+    o+=1
+
+#shape 5
+    
+print("right angle upside down triangle : ")
+
+for q in range(0,n):
+    
+    for a in range(0,n):
+        if (a<n-q) :
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
+
+#shape 6
+
+print("upside down triangle : ")
+    
+for v in range(1,n+1):
+    for b in range(1,n+4):
+        if  b>=v and b<=8-v  :
+            print("* ",end=" ")
+        else :
+            print("  ",end=" ")
+    
+    print()
+    #shape 7
+    
+for u in range(1,n):
+    for c in range(1,g):
+        if  c>=5-u and c<=3+u  :
+            print("*",end=" ")
+        else :
+            print("  ",end=" ")
+    
+    print()
+    
+    #shape 8
+for p in range(1,n+1):
+    for e in range(1,n+4):
+        if  e<=5-p or e>=3+p  :
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    
+    print()  
+    
+
+
+
